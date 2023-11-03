@@ -1,6 +1,12 @@
+import contactHero from "../assets/images/contact-hero.png";
 export default function Contact() {
   return (
     <section>
+       <div className="container">
+          <div className="flex justify-between gap-[50px] lg:gap-0">
+            <div className="w-1/2 hidden md:block">
+              <img src={contactHero} alt="" />
+            </div>
       <div className="px-4 mx-auto max-w-screen-md">
         <h2 className="heading text-center">Contact Us</h2>
         <p className="mb-8 lg:mb-16 font-light text-center text__para">
@@ -48,6 +54,8 @@ export default function Contact() {
           </button>
         </form>
       </div>
+      </div>
+        </div>
     </section>
   );
 }
